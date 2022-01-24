@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Member</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/style.css">
+    <link rel="stylesheet" href="Asset/Daftar_Member.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"> </script>
+</head>
+<body>
+  <nav>
+    <div class="container-fluid">
+            <ul class="nav">
+                <li class="nav-item">
+                    <b><a class="nav-link font1" href="index.html">HOME</a></b>
+                    </li>
+                <li class="nav-item">
+                    <b><a class="nav-link font1" href="">Produk</a></b>
+                </li>
+                    <ul class="nav" style="position: absolute; right:0pt">
+                <li class="nav-item">
+                    <b> 
+                    <a class="nav-link font1" href="daftar_member.html">DAFTAR MEMBER </a> 
+                    </b>
+                    </li>
+                <li class="nav-item">
+                    <b><a class="nav-link font1" href="">CHECKOUT</a></b>
+                </li>
+                <li class="nav-item">
+                     <b> 
+                        <a class="nav-link font1" href="" data-bs-toggle="modal" data-bs-target="#modallogin" id="">LOGIN</a> 
+                     </b>
+                </li>
+             </ul>
+    </div> 
+    </nav>
+<!-- ini bagian header -->
+<header>
+    <div class="container-fluid justify-content-center d-flex flex-row align-items-center">
+        <div class="pb-3">
+            <!-- <h2> Hello <br> <span class="pe-3 tulisan-header"> I'm Web Designer </span> </h2> -->
+            <img src="img/Arudikun Store.jpg" alt="" width="1350px" height="400px">
+        </div>  
+    </div> 
+</header> 
+     <div class="container-fluid pb-5 ">
+         <div class="row"> 
+            <div class="col-md-2"></div>
+            <div class="col-md-8 bgformpend">
+                   <form action="#" id="dft" style="display: inline;">
+                    <div class="row pb-3">
+                        <div class="col-md-4" ></div>   
+                        <div class="col-md-4">
+                           <h2> DAFTAR MEMBER </h2>
+                        </div>
+                        </div>  
+                    <div class="row pb-2">
+                    <div class="col-md-4" >
+                        <label for="nama" class="form-label"> Nama </label>
+                    </div>   
+                    <div class="col-md-5">
+                        <input type="text"  name="namadaftar" id="namadaftar" class="form-control" onkeyup="hurufbesar()">
+                    </div>
+                    </div>
+                    <div class="row pb-2">
+                        <div class="col-md-4" >
+                            <label for="Username" class="form-label"> Username </label>
+                        </div>   
+                        <div class="col-md-5">
+                            <input type="email" name="email " id="email" class="form-control">
+                        </div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="col-md-4" >
+                                <label for="password" class="form-label"> Password </label>
+                            </div>   
+                            <div class="col-md-5">
+                                <input type="password"  name="password" id="password" class="form-control">
+                            </div>
+                            </div>
+                            <div class="row pb-2">
+                                <div class="col-md-4" >
+                                    <label for="cfpassword" class="form-label"> Confirm Password </label>
+                                </div>   
+                                <div class="col-md-5">
+                                    <input type="password" name="cfpassword" id="cfpassword" class="form-control">
+                                    <span id="notepass" class="alert-danger" style="display: none">Password yang diinputkan tidak sesuai</span>
+                                </div>
+                                </div>
+                                <div class="row pb-2">
+                                    <div class="col-md-4" >
+                                        <label for="nomortlpn" class="form-label"> Nomor Telepon </label>
+                                    </div>   
+                                    <div class="col-md-5">
+                                        <input type="tel" id="notelpon" class="form-control">
+                                    </div>
+                             </div>
+                             <div class="row pb-2">
+                                <div class="col-md-4" >
+                                </div>  
+                                <div class="col-md-5">
+                                    <button type="button" id="btn-daftar" class=" btn btn-primary form-control" > Daftar </button>
+                                </div>
+                            </div>
+                   </form> 
+                   <div class="container-fluid pb-5 " id="Terdaftar" style="display: none">
+                </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+         </div>     
+        </body>
+     <!-- ini tempat footer -->
+     <Footer class="footercolor">
+      <div class="row">
+        <div class="col-md-4 pt-3">
+            <div class="col">
+              <div><b><h5> ArudiStore</h5></b></div>
+              <div><b><p>Alamat Toko : PERUM BATUMAS Blok E/3 No,17,Pandaan,Pasuruan,Jawa Timur,Indonesia </p></b></div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+         <div class="col"> 
+          <div class="pt-3"><h5>Hubungi Kami</h5></div>
+          <div class="row"> 
+              <div class="col-md-1">
+                 <img src="img/logo whatsapp 2.PNG" alt="" width="20px" height="20px"> 
+              </div>
+             <div class="col-md-2"> 
+              <h6 class="font-1"><a href="http://wa.me/6289621415682" target="_blank" class="link font-1" > <i class="bi-whatsapp font-1"  ></i> Whatsapp</a></h6> 
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-1"> 
+              <img src="img/logo ig.PNG" alt="" width="20px" height="20px"> 
+             </div>
+             <div class="col-md-2"> 
+              <h6><a href="https://www.instagram.com/aroedyqoen/" target="_blank" class="link font-1"> <i class="bi-instagram" > </i> instagram
+              </a></h6> 
+             </div> 
+          </div>
+         </div> 
+        </div>  
+      </div>
+      </Footer>
+      <script src="javascript/daftar.js"></script>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerse</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/style.css">
+    <link rel="stylesheet" href="Asset/Style1.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"> </script>
+</head>
+<body>  
+    <nav>
+    <div class="container-fluid">
+            <ul class="nav">
+                <li class="nav-item">
+                    <b><a class="nav-link font1" href="index.html">HOME</a></b>
+                    </li>
+                <li class="nav-item">
+                    <b><a class="nav-link font1" href="DaftarProduk.html">PRODUK</a></b>
+                </li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div  id="navbarSupportedContent">
+                  <ul class="nav" style="position: absolute; right:0pt">
+                    <li class="nav-item">
+                        <b> 
+                        <a class="nav-link font1" href="daftar_member.html">DAFTAR MEMBER </a> 
+                        </b>
+                        </li>
+                    <li class="nav-item">
+                        <b><a class="nav-link font1" href="#">CHECKOUT</a></b>
+                    </li>
+                    <div class="alert alert-danger" role="alert" id="alertckout" style="display: none"></div>
+                    <li class="nav-item">
+                         <b> 
+                            <a class="nav-link font1" href="" data-bs-toggle="modal" data-bs-target="#modallogin" >LOGIN</a> 
+                         </b>
+                    </li>
+            </ul>
+    </div> 
+    </nav>
+    <div class="modal" tabindex="-1" id="modallogin" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Form Login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <hr>
+              <div class="alert alert-danger" role="alert" id="alert" style="display: none"></div>
+              <div class="alert alert-success" role="alert" id="alertok" style="display: none"></div>
+              <div class="form-group">
+                <h6> Username </h6>
+                <input type="text" id="loguser" class="form-control">
+              </div>
+              <div class="form-group">
+                 <h6> Password </h6> 
+                 <input type="password" id="logpass" class="form-control">
+              </div>
+              <br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Batal </button>
+              <button type="button" class="btn btn-primary" onclick=" ceklog()">login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="container-fluid marquue pt-2">
+      <div class="container">
+        <b><marquee behavior="" direction=""> Hallo Selamat datang di Arudikun store !  </marquee></b>
+      </div>
+    </div>        
+<!-- ini bagian header -->
+<header>
+    <div class="container-fluid justify-content-center d-flex flex-row align-items-center">
+        <div class="pb-3">
+            <!-- <h2> Hello <br> <span class="pe-3 tulisan-header"> I'm Web Designer </span> </h2> -->
+            <img src="img/Arudikun Store.jpg" alt="" width="1350px" height="400px">
+        </div>  
+    </div> 
+</header>
+  <div class="container-fluid pb-5">
+        <div class="row">
+                <div class="col-md-3">  
+                    <div class="card kartuk_kategori" style="width: 13rem;">
+                      <div class="text-center fontprodukatas" style="background-color:yellow;"> <b><h5> K a t e g o r i </h2></div></b>  
+                      <ul class="pt-2" id="kategoriproduk">
+                      <li class="pb-3 ">
+                          <a class="fontprodukatas" href=""> </a>
+                     </li>
+                      <!-- <li class="pb-3">
+                        <a class="fontprodukatas" href=""> Aksesoris Laptop</a> 
+                      </li>
+                      <li class="pb-3">
+                         <a class="fontprodukatas" href=""> Aksesoris Diri </a>
+                      </li>
+                      <li class="pb-3">
+                        <a  class="fontprodukatas" href="">Coming Soon</a>
+                     </li>
+                     <li class="pb-3">
+                        <a class="fontprodukatas" href="">Coming Soon</a>
+                     </li>
+                     <br>
+                     <br>
+                     <br>      
+                     <br>
+                     <br>
+                     <br>
+                     <br> -->
+                     </ul>
+                    </div>
+                </div>
+                <div class="col-md-9">   
+                   <div class="row">
+                     <div class="col-md-4">
+                        <div class="card text-center" style="width: 17rem; background-color:rgb(71, 230, 43); border-color:black
+                        ;border-width: 5px;">
+                            <img src="Foto_Produk/Aksesoris Hp 1.jpg" class="card-img-top" alt="..." width="200px" height="300px">
+                            <div class="text-center" style="background-color:red; color: wheat;"> 
+                                <b><p>Phone Holder<br> Rp.30.000,-</p></b>
+                            </div>
+                            <div class="text-center" style="background-color:yellow">
+                            <b><a href="Detail_Produk_1.html" class="">Detail</a></b>
+                            </div>
+                          </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="card text-center" style="width: 17rem; background-color:rgb(71, 230, 43); border-color:black
+                        ;border-width: 5px;">
+                            <img src="Foto_Produk/Aksesoris Hp 2.jpg" class="card-img-top" alt="..." width="200px" height="300px">
+                            <div class="text-center" style="background-color:red; color: wheat;"> 
+                                <b><p>Charger Mobil/Motor<br> Rp.45.000,-</p></b>
+                            </div>
+                            <div class="text-center" style="background-color:yellow">
+                            <b><a href="Detail_Produk_2.html" class="">Detail</a></b>
+                            </div>
+                          </div>
+                      </div>
+                     <div class="col-md-4">
+                        <div class="card text-center" style="width: 17rem; background-color:rgb(71, 230, 43); border-color:black;border-width: 5px;">
+                            <img src="Foto_Produk/Aksesoris hp 3.jpg" class="card-img-top" alt="..." width="200px" height="300px">
+                            <div class="text-center" style="background-color:red; color: wheat;"> 
+                                <b><p>WaterProof/Anti air Hp<br> Rp.10.000,-</p></b>
+                            </div>
+                            <div class="text-center" style="background-color:yellow">
+                            <b><a href="Detail_Produk_3.html" class="">Detail</a></b>
+                            </div>
+                          </div>
+                      </div>
+                   </div>  
+                </div>
+            </div>
+        </div>
+    </div>  
+</body>
+<script src="javascript/main.js"></script> 
+<Footer class="footercolor">
+<div class="row">
+  <div class="col-md-4 pt-3">
+      <div class="col">
+        <div><b><h5> ArudiStore</h5></b></div>
+        <div><b><p>Alamat Toko : PERUM BATUMAS Blok E/3 No,17,Pandaan,Pasuruan,Jawa Timur,Indonesia </p></b></div>
+      </div>
+  </div>
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+   <div class="col"> 
+    <div class="pt-3"><h5>Hubungi Kami</h5></div>
+    <div class="row"> 
+        <div class="col-md-1">
+           <img src="img/logo whatsapp 2.PNG" alt="" width="20px" height="20px"> 
+        </div>
+       <div class="col-md-2"> 
+        <h6 class="font-1"><a href="http://wa.me/6289621415682" target="_blank" class="link font-1" > <i class="bi-whatsapp font-1"  ></i> Whatsapp</a></h6> 
+       </div>
+       <div class="col-md-1"></div>
+       <div class="col-md-1"> 
+        <img src="img/logo ig.PNG" alt="" width="20px" height="20px"> 
+       </div>
+       <div class="col-md-2"> 
+        <h6><a href="https://www.instagram.com/aroedyqoen/" target="_blank" class="link font-1"> <i class="bi-instagram" > </i> instagram
+        </a></h6> 
+       </div> 
+    </div>
+   </div> 
+  </div>  
+</div>
+</Footer>
+</html>

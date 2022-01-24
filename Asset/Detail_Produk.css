@@ -1,0 +1,44 @@
+nav {
+    background-color: yellow;
+    font-family: sans-serif;
+    font-display: inherit;
+    }
+    
+    body{
+       background-color:rgb(221, 221, 89); 
+    }
+    .font1{
+        background-color: red;
+        border-radius: 20pt;
+        color: white;
+        font-size: 12pt;
+    }
+    .marquue{
+    background-color: moccasin;
+    font-size: 20pt;
+    font-family: 'Courier New';
+    color: orangered;
+    }
+    
+    .kartuk_kategori{
+    background-color: wheat;
+    
+    }
+    .fontprodukatas{
+    color: black;
+    font-family: fantasy;
+    }
+    
+    .footercolor {
+    background-color: yellow; 
+    border:black
+    }
+    /* lanjutan detail produk */
+    .warnakartu{
+        background-color: wheat;
+
+    }
+    .warnahargarp{
+        color: maroon;
+
+    }
